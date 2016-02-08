@@ -1,11 +1,12 @@
 {
     "compilerOptions": {
         "module": "commonjs",
-        "sourceMap": true
+        "sourceMap": true,
+        "outDir": "build/"
     },
     "files": [
         "./typings/tsd.d.ts",
-        "./app.tsx",
-        "./MyClass.tsx"
+        "./src/app.tsx",
+        "./src/MyClass.tsx"
     ]
 }
