@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "browserify app.tsx -p [tsify] -o bundle.js",
-    "watch": "watchify app.tsx -p [tsify] -o bundle.js"
+    "build": "browserify app.tsx -p [tsify] -o bundle.js --extension=.jsx -v -d",
+    "watch": "watchify app.tsx -p [tsify] -o bundle.js --extension=.jsx"
   },
   "author": "",
   "dependencies": {
