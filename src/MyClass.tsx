@@ -5,3 +5,4 @@ export interface MyClass {
 export function myFunc(c: MyClass) {
     return c.foo;
 }
+

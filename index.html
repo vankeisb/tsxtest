@@ -4,24 +4,23 @@
     <meta charset="utf-8">
     <title>title</title>
     <script src="build/bundle.js"></script>
-    <style type="text/css">
-        .text-view {
-            border: 1px solid blue;
-            height: 200px;
-            width: 100%;
-        }
-
-        .text-area {
-            width: 100%;
-            height: 200px;
-        }
-    </style>
 </head>
 <body>
-<div class="text-view">
-</div>
-<hr/>
-<textarea class="text-area">
-</textarea>
+<script type="text/javascript">
+    var ReactDOM = require('react-dom');
+    var React = require('react');
+    debugger;
+    var Demo = expresso.RepoView;
+    var f = React.createFactory(RepoView);
+    ReactDOM.render(
+            new f({
+                repo: viewData.repo,
+                branches: viewData.branches,
+                user: viewData.user
+            }),
+            document.getElementById('daRepo')
+    );
+</script>
+
 </body>
 </html>

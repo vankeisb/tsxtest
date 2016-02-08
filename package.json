@@ -4,11 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "tsc && browserify build/app.js -o build/bundle.js",
-    "watch": "watchify build/app.js -o build/bundle.js"
+    "build": "tsc && browserify -r react -r react-dom build/WithReact.js -o build/bundle.js"
   },
   "author": "",
   "dependencies": {
+    "react": "0.14.3",
+    "react-dom": "0.14.3"
   },
   "devDependencies": {
     "tsify": "0.13.2"

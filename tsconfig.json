@@ -2,11 +2,11 @@
     "compilerOptions": {
         "module": "commonjs",
         "sourceMap": true,
-        "outDir": "build/"
+        "outDir": "build/",
+        "jsx": "react"
     },
     "files": [
         "./typings/tsd.d.ts",
-        "./src/app.tsx",
-        "./src/MyClass.tsx"
+        "./src/WithReact.tsx"
     ]
 }
