@@ -6,21 +6,16 @@
     <script src="build/bundle.js"></script>
 </head>
 <body>
-<script type="text/javascript">
-    var ReactDOM = require('react-dom');
-    var React = require('react');
-    debugger;
-    var Demo = expresso.RepoView;
-    var f = React.createFactory(RepoView);
-    ReactDOM.render(
-            new f({
-                repo: viewData.repo,
-                branches: viewData.branches,
-                user: viewData.user
-            }),
-            document.getElementById('daRepo')
-    );
-</script>
-
+    <div id="container"></div>
+    <script type="text/javascript">
+        var ReactDOM = require('react-dom');
+        var React = require('react');
+        debugger;
+        var f = React.createFactory(Demo);
+        ReactDOM.render(
+                new f({}),
+                document.getElementById('container')
+        );
+    </script>
 </body>
 </html>
